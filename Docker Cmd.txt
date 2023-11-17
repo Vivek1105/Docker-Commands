@@ -1,0 +1,42 @@
+docker --version : this cmd is used to check the version of docker 
+docker pull [images's name] : By using this cmd u can pull an images from docker hub
+docker ps : this cmd will show the current runing container
+docker ps -a : this cmd will show the all containers which has been created before
+docker images : this cmd will show the all images whcih has been created 
+docker rm container_ID : this is used to remove container from docker
+docker rmi image'id : this cmd is used to remov images
+
+docker system prune :  This will remove:
+                         - all stopped containers
+                         - all networks not used by at least one container
+                         - all dangling images
+                         - all dangling build cache
+
+
+
+docker search image's name : this cmd is used to search the image on docker hub
+
+docker run [image's name or id] : this cmd is used to create container
+
+To keep in runiing:   docker run --name pythoncontainer1 -it -d e5f0a
+                                   [Name_of_container]   [it-Intractive] [d - detached] image'id
+
+
+docker stop container'id : this cmd is used to stop the running container
+docker restart pythoncontainer: this cmd is used to restart the container
+docker inspect container'id : this cmd is used to check all details of the container
+docker exec -it container'id exact_comand : eg - [docker exec -it 151a742 python3] : by using this cmd we can enter inside the container 
+
+
+MySql:
+ 1. docker run --name MysqlDb -e MYSQL_ROOT_PASSWORD=root -d mysql : this cmd run and set password in mysql
+ 2. docker exec -it MysqlDb bash
+ 3. mysql -p
+ 4. Enter password:root
+ 5. 
+       
+
+
+
+
+
